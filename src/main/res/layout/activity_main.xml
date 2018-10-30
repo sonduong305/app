@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/dbhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULATOR"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number 1:"
+                />
+
+            <EditText
+                android:id="@+id/edt_hoten"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="My message"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number 2:"
+                />
+            <EditText
+                android:id="@+id/edt_tuoi"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="My message"
+                android:inputType="number"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number 3:"
+                />
+            <EditText
+                android:id="@+id/edt_address"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="My message"
+
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"
+            android:text="Send"
+            android:onClick="sendMessage"
+            />
+        <Button
+            android:id="@+id/btn_insert"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"
+            android:text="Insert"
+            android:onClick="insert"
+            />
+        <Button
+            android:id="@+id/btn_get"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"
+            android:text="getAll"
+            android:onClick="getAll"
+            />
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="here"/>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.LinearLayoutCompat>
